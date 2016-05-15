@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Code JavaScript</title>
+		<meta charset="utf-8">
+		<script>
+			function addNumbers(array)
+			{
+				var sum = 0;
+				for(x=0;x<number_array.length;x++)
+				{
+					sum+=number_array[x];
+				}
+				return sum;
+			}
+			function getCurrentDate()
+			{
+				var current_date = new Date();
+				var day_of_week = current_date.getDay();
+				var month_of_year = current_date.getMonth();
+	            var date_of_month = current_date.getDate();
+				var year = current_date.getFullYear();
+				var week = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday") ;
+				var month = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+				return week[day_of_week]+", "+month[month_of_year]+" "+date_of_month+", "+year;
+			}
+		
+        function arrayToString(array)
+        {
+           
+			var concat = "";
+            for(x=0;x<array.length;x++)
+            {
+                concat+=array[x];
+            }
+			return concat;
+            
+        }
+		
+		function findMaxNumber()
+		{
+			var arg_array = new Array(1,2,3,4,5,6,7,8,9,10,0);
+			var max = arg_array[0];
+			for(x=0;x<arg_array.length;x++)
+			{
+				if(arg_array[x]>max)
+				{
+					max=arg_array[x];
+				}
+			}
+			return max;
+		}
+		
+		
+        function getDigits(String)
+        {
+            var numbers = new Array('0','1','2','3','4','5','6','7','8','9');
+            var string_concat = "";
+            for(x=0;x<numba.length;x++)
+            {
+                for(y=0;y<numbers.length;y++)
+                {
+                    if(String.charAt(x)==numbers[y])
+                    {
+                        string_concat+=numbers[y];
+                    }
+                }
+            }
+            return string_concat;
+        
+        }
+		function reverseString(String)
+		{
+			var reversed ="";
+			for(x<word.length;x>=0;x--)
+			{
+				reversed+=word.charAt(x);
+				
+			}
+			return reversed;
+		}
+		</script>
+	</head>
+	<body>
+		<h3>Function: addNumbers</h3>
+		<p>The sum of the array [1,2,3,4,5,6,7,8,9,10] is:</p>
+		<script>
+		    var number_array = new Array(1,2,3,4,5,6,7,8,9,10);
+			document.write(addNumbers(number_array));
+			
+		</script>
+		<h3>Function: getCurrentDate</h3>
+		<script>
+			document.write(getCurrentDate());
+		</script>
+		<h3>Function: arrayToString</h3>
+		<p>
+		Array to String of the array ["Soen287","is","awesome"] is:</p>
+		<script>
+			var array = new Array("Soen287","is","awesome");  
+			document.write(arrayToString(array));
+		</script>
+		
+		<h3>Function:findMaxNumber</h3>
+		<p>The largest number in the array [1,2,3,4,5,6,7,8,9,10,0] is:</p>
+		<script>
+			document.write(findMaxNumber());
+		</script>
+		<h3>Function: getDigits</h3>
+		
+		<p>Original String:</p>
+		<script>
+			var numba = "0clau123is456awesome789";
+			document.write(numba+"\n");
+		</script>  
+		<br/>
+		<p>New String:</p>
+		
+		<script>
+			var numba = "0clau123is456awesome789";
+			document.write(getDigits(numba));</script>
+		
+		<h3>Function: reverseString</h3>
+		<p>Original String:</p>
+		<script>
+			var word = "claudia";	
+			document.write(word);</script>
+		<p>New String:</p>
+		<script>
+			var word = "claudia";	
+			document.write(reverseString(word));
+		</script>
+			
+		
+		
+		
+	</body>
+</html>
